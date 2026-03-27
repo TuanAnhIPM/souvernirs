@@ -23,6 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-# Large media files (host separately)
-public/media/*.mp4
-public/media/*.mov
