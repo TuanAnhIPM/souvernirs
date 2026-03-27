@@ -231,9 +231,12 @@ export default function App() {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <img
-          src="/media/coffee-feature.jpg"
-          alt="Buon Ma Thuot Coffee"
+        <video
+          src="/media/coffee-hero.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-vn-green-deep/75" />
