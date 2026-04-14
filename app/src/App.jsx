@@ -18,7 +18,7 @@ const PRODUCTS = [
     origin: '\u0110\u1eafk L\u1eafk Province',
     desc: 'Premium robusta & arabica beans from the coffee capital of Vietnam. Rich, bold flavor with chocolate undertones.',
     badge: 'Carry-on Safe',
-    video: '/media/coffee-hero.mp4',
+    video: '/media/coffee.mp4',
     poster: '/media/coffee-feature.jpg',
     variants: [
       { label: 'Ground Robusta - Dark Roast', tag: 'ground-robusta' },
@@ -315,23 +315,15 @@ export default function App() {
               <div key={product.id} className="bg-white rounded-2xl shadow-md overflow-hidden border border-vn-cream-dark hover:shadow-xl transition-shadow">
                 {/* Product media area */}
                 <div className="relative aspect-video bg-black overflow-hidden">
-                  {product.id === 'coffee' ? (
-                    <img
-                      src="/media/coffee-feature.jpg"
-                      alt={product.name}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <video
-                      src={product.video}
-                      poster={product.poster || ''}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                    />
-                  )}
+                  <video
+                    src={product.video}
+                    poster={product.poster || ''}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent" />
                   <span className="absolute top-3 right-3 bg-vn-green-deep/90 backdrop-blur-sm text-white text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
                     <Plane size={12} /> {product.badge}
