@@ -322,7 +322,7 @@ export default function App() {
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover video-zoom-out"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent" />
                   <span className="absolute top-3 right-3 bg-vn-green-deep/90 backdrop-blur-sm text-white text-xs font-bold px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
